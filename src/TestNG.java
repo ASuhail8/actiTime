@@ -11,6 +11,6 @@ public void test(String city, String area)
 {
 	Reporter.log(city,true);
 	Reporter.log(area,true);
-	System.out.println("Hello");
+	
 }
 }
