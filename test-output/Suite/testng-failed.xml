@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <parameter name="AppURL" value="https://online.actitime.com/unisys/login.do"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="nodeURL" value=""/>
+    <classes>
+      <class name="com.actiTime.tests.validloginlogoutTest">
+        <methods>
+          <include name="Testloginlogout"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.actiTime.tests.validloginlogoutTest -->
+      <class name="com.actiTime.tests.verifyVersionTest">
+        <methods>
+          <include name="TestverifyVersion"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.actiTime.tests.verifyVersionTest -->
+      <class name="com.actiTime.tests.invalidLoginTest">
+        <methods>
+          <include name="TestinvalidLogin"/>
+          <include name="preCondition"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- com.actiTime.tests.invalidLoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

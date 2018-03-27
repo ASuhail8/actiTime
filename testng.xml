@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  <parameter name = "nodeURL" value="http://localhost:44444/wb/hub"/> 
+  <parameter name = "browserName" value = "chrome"/>
+  <parameter name ="AppURL" value = "https://online.actitime.com/unisys/login.do"/>
+  <packages>
+  <package name = "com.actiTime.tests"/>
+  </packages>    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
