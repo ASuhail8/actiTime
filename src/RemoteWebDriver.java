@@ -10,7 +10,7 @@ public static void main(String[] args)
 {
 	
 	
-	URL url = new URL("https");
+	URL url = new URL();
 	DesiredCapabilities dc = new DesiredCapabilities();
 
 	
