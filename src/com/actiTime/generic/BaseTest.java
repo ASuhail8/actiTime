@@ -29,7 +29,7 @@ public class BaseTest implements AutoConst
 	RemoteWebDriver driver = new RemoteWebDriver(url,dc);
 	 driver.manage().window().maximize();
 	 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	 driver.get(AppURL);		
+	 driver.get(AppURL);	
 		
 	}
 	

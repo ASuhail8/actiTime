@@ -1,3 +1,4 @@
+import org.apache.poi.util.SystemOutLogger;
 import org.testng.Reporter;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -10,5 +11,6 @@ public void test(String city, String area)
 {
 	Reporter.log(city,true);
 	Reporter.log(area,true);
+	System.out.println("Hello");
 }
 }
