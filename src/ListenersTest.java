@@ -28,10 +28,10 @@ public class ListenersTest implements ITestListener
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-	String name = result.getMethod().getMethodName();
+	String methodname = result.getMethod().getMethodName();
 	TakesScreenshot t = (TakesScreenshot) BaseTest.driver;
 	File src = t.getScreenshotAs(OutputType.FILE);
-	File dest = new File("./Screenshot"+name+".png");
+	File dest = new File("./Screenshot"+methodname+".png");
 	try {
 		FileUtils.copyFile(src, dest);
 	} catch (IOException e) {
